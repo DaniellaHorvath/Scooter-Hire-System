@@ -10,7 +10,7 @@ class User {
   }
 
   login(password){
-    if(this.password === password){
+    if(password === this.password){
       this.loggedIn = true;
       return `${this.username} is logged in`;
     }else{
