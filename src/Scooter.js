@@ -12,7 +12,7 @@ class Scooter {
   }
 
   rent(user){
-    if(this.Scooter === 20 && !this.isBroken){
+    if(this.Scooter > 20 && !this.isBroken){
       this.station = null;
       this.user = user;
       return `Scooter ${this.Scooter} is rented out to ${this.user}`;
